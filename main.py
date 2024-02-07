@@ -29,7 +29,7 @@ def submit_form():
     email = request.form['email']
 
     with open("form.txt", 'a') as f:
-        f.write(f'Text: (text), Email: Femail]\n')
+        f.write(f'Text: {text}, Email: {email} \n')
 
     # Aquí puedes devolver una respuesta, redireccionar, etc.
     return f"Formulario enviado con éxito <br>a class="" href="/">Volver</a>"
